@@ -1,0 +1,22 @@
+{
+  "name": "personal",
+  "description": "personal website",
+  "main": "server.js",
+  "authors": [
+    "singalongwithme <csinghavong@gmail.com>"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.8",
+    "angular-material": "~1.0.2"
+  }
+}
