@@ -6,15 +6,15 @@ var gulp   = require('gulp'),
 
 gulp.task('inject', function () {
 
-	return gulp.src('client/views/index.html')
+	return gulp.src('app/views/index.html')
 		.pipe(inject(gulp.src(bower(), {read: false}), {starttag: '<!-- inject:bower:{{ext}} -->'}))
-		.pipe(inject(gulp.src('client/js/**/*.js', {read: false})))
-		.pipe(gulp.dest('client/views'));
+		.pipe(inject(gulp.src('app/modules/**/*.js', {read: false})))
+		.pipe(gulp.dest('app/views'));
 
 });
 
 gulp.task('watch', function () {
 
-	gulp.watch(['client/js/**/*.js', 'bower_components/js/**/*.js'], ['inject']);
+	gulp.watch(['app/modules/**/*.js', 'bower_components/**/*.js'], ['inject']);
 
 });

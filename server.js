@@ -1,12 +1,22 @@
-var http = require('http');
+var http 	= require('http'),
+	express = require('express'),
+	app 	= express();
 
-var server = http.createServer(function (req, res) {
-	res.writeHead(200, {'Content-Type': 'text/html'});
-	res.end('<h1>Hello World</h1>');
+app.get('/', function (req, res) {
+	res.sendFile(__dirname + '/app/views/index.html');
 });
+
+app.use('/bower_components', express.static(__dirname + '/bower_components'));
+
+app.use('/app', express.static(__dirname + '/app'));
+
+// var server = http.createServer(function (req, res) {
+// 	res.writeHead(200, {'Content-Type': 'text/html'});
+// 	res.end();
+// });
 
 var port = Number(process.env.PORT || 3000);
 
-server.listen(port, function () {
+app.listen(port, function () {
 	console.log('Listening on port ' + port);
 });
