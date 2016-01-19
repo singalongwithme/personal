@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="chrissing">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width">
@@ -9,7 +9,7 @@
 		<!-- endinject -->
 	</head>
 	<body>
-		<h1>Hello World!</h1>
+		<div ui-view="banner"></div>
 		<!-- inject:bower:js -->
 		<script src="/bower_components/angular/angular.js"></script>
 		<script src="/bower_components/angular-animate/angular-animate.js"></script>
@@ -20,6 +20,8 @@
 		<!-- endinject -->
 
 		<!-- inject:js -->
+		<script src="/app/modules/app.js"></script>
+		<script src="/app/modules/banner/BannerController.js"></script>
 		<!-- endinject -->
 	</body>
 </html>
