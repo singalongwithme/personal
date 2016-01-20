@@ -1,0 +1,101 @@
+.banner {
+	position: relative;
+
+	width: 100%;
+	height: 600px;
+
+	background-color: antiquewhite;
+
+	.profile {
+		@include center(-100px);
+
+		width: 200px;
+		height: 200px;
+
+		@include setCoverBackground('../assets/profile.jpg');
+
+		@include border-radius(100px);
+		z-index: 1;
+	}
+
+	.circle {
+		@include center(-100px);
+
+		width: 210px;
+		height: 210px;
+
+		background-color: white;
+
+		@include border-radius(105px);
+	}
+
+	.social-icons {
+		position: absolute;
+		bottom: 100px;
+		left: 0;
+		right: 0;
+		margin: auto;
+
+		width: 50%;
+		height: 100px;
+		text-align: center;
+
+		.icon {
+			display: inline-block;
+			vertical-align: top;
+			overflow: hidden;
+			margin: 8px;
+			width: 96px;
+			height: 96px;
+			font-size: 0;
+			text-indent: -9999px;
+
+			@include transition(background 0.3s, -webkit-filter 0.5s);
+		}
+
+		.github {
+			@include social-icon-bg('../assets/github.png');
+			-webkit-filter: invert(0%);
+
+			&:hover {
+				background-color: #a6a6a6;
+				background-position: 0 -96px;
+				-webkit-filter: invert(100%);
+			}
+		}
+
+		.linkedin {
+			@include social-icon-bg('../assets/linkedin.png');
+			-webkit-filter: invert(100%);
+			background-color: #a6a6a6;
+
+			&:hover {
+				background-color: #4099ff;
+				background-position: 96px 0;
+				-webkit-filter: invert(0%);
+			}
+		}
+
+		.blog {
+			@include social-icon-bg('../assets/blog.png');
+			-webkit-filter: invert(0%);
+
+			&:hover {
+				background-color: #117fd0;
+				background-position: 0 96px;
+				-webkit-filter: invert(100%);
+			}
+		}
+
+		.email {
+			@include social-icon-bg('../assets/email.png');
+			-webkit-filter: invert(0%);
+
+			&:hover {
+				background-color: #2cb7c9;
+				background-position: -96px 0;
+				-webkit-filter: invert(100%);
+			}
+		}
+	}
+}

@@ -1,0 +1,100 @@
+.banner {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  background-color: antiquewhite; }
+  .banner .profile {
+    position: absolute;
+    top: -100px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    background: url("../assets/profile.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    border-radius: 100px;
+    z-index: 1; }
+  .banner .circle {
+    position: absolute;
+    top: -100px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 210px;
+    height: 210px;
+    background-color: white;
+    -webkit-border-radius: 105px;
+    -moz-border-radius: 105px;
+    -ms-border-radius: 105px;
+    border-radius: 105px; }
+  .banner .social-icons {
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 50%;
+    height: 100px;
+    text-align: center; }
+    .banner .social-icons .icon {
+      display: inline-block;
+      vertical-align: top;
+      overflow: hidden;
+      margin: 8px;
+      width: 96px;
+      height: 96px;
+      font-size: 0;
+      text-indent: -9999px;
+      -webkit-transition: background 0.3s, -webkit-filter 0.5s;
+      -moz-transition: background 0.3s, -webkit-filter 0.5s;
+      -ms-transition: background 0.3s, -webkit-filter 0.5s;
+      transition: background 0.3s, -webkit-filter 0.5s; }
+    .banner .social-icons .github {
+      background: url("../assets/github.png");
+      background-size: cover;
+      background-position: 0 0;
+      background-color: #595959;
+      -webkit-filter: invert(0%); }
+      .banner .social-icons .github:hover {
+        background-color: #a6a6a6;
+        background-position: 0 -96px;
+        -webkit-filter: invert(100%); }
+    .banner .social-icons .linkedin {
+      background: url("../assets/linkedin.png");
+      background-size: cover;
+      background-position: 0 0;
+      background-color: #595959;
+      -webkit-filter: invert(100%);
+      background-color: #a6a6a6; }
+      .banner .social-icons .linkedin:hover {
+        background-color: #4099ff;
+        background-position: 96px 0;
+        -webkit-filter: invert(0%); }
+    .banner .social-icons .blog {
+      background: url("../assets/blog.png");
+      background-size: cover;
+      background-position: 0 0;
+      background-color: #595959;
+      -webkit-filter: invert(0%); }
+      .banner .social-icons .blog:hover {
+        background-color: #117fd0;
+        background-position: 0 96px;
+        -webkit-filter: invert(100%); }
+    .banner .social-icons .email {
+      background: url("../assets/email.png");
+      background-size: cover;
+      background-position: 0 0;
+      background-color: #595959;
+      -webkit-filter: invert(0%); }
+      .banner .social-icons .email:hover {
+        background-color: #2cb7c9;
+        background-position: -96px 0;
+        -webkit-filter: invert(100%); }
