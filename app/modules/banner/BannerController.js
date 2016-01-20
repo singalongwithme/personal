@@ -16,7 +16,7 @@
 			},
 			{
 				'class': 'linkedin',
-				'link': 'http://www.linekdin.com/in/csinghavong',
+				'link': 'http://www.linkedin.com/in/csinghavong',
 			},
 			{
 				'class': 'blog',
