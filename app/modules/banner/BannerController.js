@@ -12,19 +12,19 @@
 		vm.icons = [
 			{
 				'class': 'github',
-				'link': 'http://www.github.com/singalongwithme',
+				'link': 'http://www.github.com/singalongwithme'
 			},
 			{
 				'class': 'linkedin',
-				'link': 'http://www.linkedin.com/in/csinghavong',
+				'link': 'http://www.linkedin.com/in/csinghavong'
 			},
 			{
 				'class': 'blog',
-				'link': '#'
+				'link': 'http://christophersing.azurewebsites.net'
 			},
 			{
 				'class': 'email',
-				'link': 'mailto:csinghavong@gmail.com',
+				'link': 'mailto:csinghavong@gmail.com'
 			}
 		]
 	};
