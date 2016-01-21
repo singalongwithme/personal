@@ -3,6 +3,11 @@
 	src: url(../assets/fonts/Genome-Thin.otf);
 }
 
-h1, h2, h3 {
+h1, h2, h3, p {
 	font-family: genome;
+}
+
+p {
+	color: #fff;
+	font-weight: 900;
 }
