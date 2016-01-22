@@ -28,6 +28,13 @@
 	transition: $values;
 }
 
+@mixin transform($values...) {
+	-webkit-transform: $values;
+	-moz-transform: $values;
+	-ms-transform: $values;
+	transform: $values;
+}
+
 @mixin social-icon-bg($url) {
 	background: url($url);
 	background-size: cover;

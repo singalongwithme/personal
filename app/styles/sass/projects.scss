@@ -1,0 +1,118 @@
+.projects {
+	position: relative !important;
+	background-color: #f1f1f1;
+
+	@include center(0);
+
+	.project-div {
+		position: relative !important;
+		width: 50%;
+		padding: 15px 40px 40px 40px;
+
+		@include center(0);
+
+		h2, p {
+			color : black;
+		}
+
+		h2 {
+			text-align: center;
+			text-decoration: underline;
+		}
+
+		p {
+			text-align: left;
+		}
+
+		.project-container {
+			overflow: hidden;
+			.project {
+				position: relative;
+				overflow: hidden;
+				background-color: #f1f1f1;
+				opacity: 1;
+
+				@include transition(all 0.2s ease-in-out);
+
+				&:hover {
+					@include transform(scale(1.05));
+
+					.overlay {
+						opacity: 0.05;
+					}
+
+					.button-container {
+						h3 {
+							opacity: 1;
+						}
+						.project-link {
+							opacity: 1;
+							@include transition(all 0.3s linear);
+						}
+					}
+				}
+
+				.overlay {
+					.project-banner {
+						position: relative;
+						width: 100%;
+						height: auto;
+						box-sizing: border-box;
+					}
+					opacity: 1;
+					@include transition(all 0.2s ease-in-out);
+				}
+
+					.button-container {
+						@include center(0);
+
+						h3 {
+							opacity: 0.05;
+							text-align: center;
+
+						}
+						.project-link {
+							font-family: Arial;
+							line-height: 20px;
+							font-weight: 900;
+							font-size: 20px;
+							width: 140px;
+							height: 40px;
+							text-decoration: none;
+							padding: 5px 20px;
+							border: 4px solid #ff8000;
+							text-align: center;
+							line-height: 40px;
+							color: #ff8000;
+							font-weight: 900;
+							opacity: 0.05;
+							letter-spacing: 0.75px;
+
+							@include center(0);
+							// @include transition(all 1s ease-in-out);
+
+							&:after {
+								position: absolute;
+								content: "";
+								top: 0;
+								left: 0;
+								width: 0%;
+								height: 100%;
+								z-index: -1;
+								background-color: #ff8000;
+								@include transition(width 0.5s ease);
+							}
+
+							&:hover:after {
+								width: 100%;
+							}
+
+							&:hover {
+								color: #f1f1f1;
+							}
+						}
+					}
+				}
+			}
+	}
+}

@@ -7,25 +7,24 @@
 	@include setCoverBackground('../assets/background.jpg');
 
 	.profile {
-		@include center(-100px);
 
 		width: 200px;
 		height: 200px;
+		z-index: 1;
 
 		@include setCoverBackground('../assets/profile.jpg');
-
+		@include center(-100px);
 		@include border-radius(100px);
-		z-index: 1;
 	}
 
 	.circle {
-		@include center(-100px);
 
 		width: 210px;
 		height: 210px;
 
 		background-color: white;
 
+		@include center(-100px);
 		@include border-radius(105px);
 	}
 

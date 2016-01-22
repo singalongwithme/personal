@@ -23,6 +23,16 @@
 						templateUrl: 'app/views/banner.html',
 						controller: 'BannerController',
 						controllerAs: 'vm'
+					},
+					'about': {
+						templateUrl: 'app/views/about.html',
+						controller: 'AboutController',
+						controllerAs: 'vm'
+					},
+					'projects': {
+						templateUrl: 'app/views/projects.html',
+						controller: 'ProjectsController',
+						controllerAs: 'vm'
 					}
 				}
 			})

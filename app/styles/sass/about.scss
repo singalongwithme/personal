@@ -1,0 +1,27 @@
+.about {
+	position: relative !important;
+	width: 50%;
+	padding: 30px 40px 15px 40px;
+	@include center(0);
+
+	text-align: justify;
+
+	h2, p {
+		color: black;
+	}
+
+	h2 {
+		text-align: center;
+		text-decoration: underline;
+	}
+
+	p {
+		a {
+			text-decoration: none;
+
+			&:hover {
+				color: navy;
+			}
+		}
+	}
+}

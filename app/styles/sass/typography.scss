@@ -3,11 +3,14 @@
 	src: url(../assets/fonts/Genome-Thin.otf);
 }
 
-h1, h2, h3, p {
+h1, h2, h3, p, a {
 	font-family: genome;
+	letter-spacing: 1.5px;
 }
 
 p {
 	color: #fff;
 	font-weight: 900;
+	letter-spacing: 1.5px;
+	line-height: 24px;
 }
