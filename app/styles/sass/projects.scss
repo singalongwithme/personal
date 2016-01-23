@@ -32,7 +32,7 @@
 				background-color: #f1f1f1;
 				opacity: 1;
 
-				@include transition(all 0.2s ease-in-out);
+				@include transition(all 0.3s ease-in-out);
 
 				&:hover {
 					@include transform(scale(1.05));
@@ -47,7 +47,7 @@
 						}
 						.project-link {
 							opacity: 1;
-							@include transition(all 0.3s linear);
+							@include transition(all 0.5s ease);
 						}
 					}
 				}
@@ -60,7 +60,7 @@
 						box-sizing: border-box;
 					}
 					opacity: 1;
-					@include transition(all 0.2s ease-in-out);
+					// @include transition(all 0.2s ease-in-out);
 				}
 
 					.button-container {
@@ -80,16 +80,16 @@
 							height: 40px;
 							text-decoration: none;
 							padding: 5px 20px;
-							border: 4px solid #ff8000;
+							border: 4px solid #669999;
 							text-align: center;
 							line-height: 40px;
-							color: #ff8000;
+							color: #669999;
 							font-weight: 900;
 							opacity: 0.05;
 							letter-spacing: 0.75px;
 
 							@include center(0);
-							// @include transition(all 1s ease-in-out);
+							@include transition(all .3s ease-in-out);
 
 							&:after {
 								position: absolute;
@@ -99,8 +99,8 @@
 								width: 0%;
 								height: 100%;
 								z-index: -1;
-								background-color: #ff8000;
-								@include transition(width 0.5s ease);
+								background-color: #669999;
+								@include transition(width 0.3s ease-in-out);
 							}
 
 							&:hover:after {
