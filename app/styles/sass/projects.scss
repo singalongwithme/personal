@@ -38,7 +38,7 @@
 
 				@include transition(all 0.3s ease-in-out);
 
-				&:hover {
+				&:hover, &:active, &:focus {
 					@include transform(scale(1.05));
 
 					.overlay {
@@ -122,7 +122,7 @@
 								@include transition(width 0.3s ease-in-out);
 							}
 
-							&:hover:after {
+							&:hover:after, &:focus:after, &:active:after {
 								width: 100%;
 							}
 

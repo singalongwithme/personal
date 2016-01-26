@@ -83,11 +83,8 @@ body {
         width: 75%; } }
     @media screen and (max-width: 480px) {
       .banner .social-icons {
-        bottom: 175px; } }
-    @media screen and (max-width: 480px) {
-      .banner .social-icons {
-        width: 95%;
-        padding: 0; } }
+        bottom: 175px;
+        width: 100%; } }
     @media screen and (max-width: 480px) {
       .banner .social-icons .banner-name {
         font-size: 20px; } }
@@ -117,7 +114,7 @@ body {
       background-position: 0 0;
       background-color: antiquewhite;
       -webkit-filter: invert(0%); }
-      .banner .social-icons .github:hover {
+      .banner .social-icons .github:hover, .banner .social-icons .github:focus, .banner .social-icons .github:active {
         background-color: #a6a6a6;
         background-position: 0 -80px;
         -webkit-filter: invert(100%); }
@@ -131,7 +128,7 @@ body {
       background-color: antiquewhite;
       -webkit-filter: invert(100%);
       background-color: #051428; }
-      .banner .social-icons .linkedin:hover {
+      .banner .social-icons .linkedin:hover, .banner .social-icons .linkedin:focus, .banner .social-icons .linkedin:active {
         background-color: #4099ff;
         background-position: 80px 0;
         -webkit-filter: invert(0%); }
@@ -144,7 +141,7 @@ body {
       background-position: 0 0;
       background-color: antiquewhite;
       -webkit-filter: invert(0%); }
-      .banner .social-icons .blog:hover {
+      .banner .social-icons .blog:hover, .banner .social-icons .blog:focus, .banner .social-icons .blog:active {
         background-color: #117fd0;
         background-position: 0 80px;
         -webkit-filter: invert(100%); }
@@ -157,7 +154,7 @@ body {
       background-position: 0 0;
       background-color: antiquewhite;
       -webkit-filter: invert(0%); }
-      .banner .social-icons .email:hover {
+      .banner .social-icons .email:hover, .banner .social-icons .email:focus, .banner .social-icons .email:active {
         background-color: #2cb7c9;
         background-position: -80px 0;
         -webkit-filter: invert(100%); }
@@ -184,7 +181,7 @@ body {
       width: 75%; } }
   @media screen and (max-width: 480px) {
     .about {
-      width: 95%;
+      width: 90%;
       padding: 0; } }
   .about h2, .about p {
     color: black; }
@@ -223,7 +220,7 @@ body {
         width: 75%; } }
     @media screen and (max-width: 480px) {
       .projects .project-div {
-        width: 95%;
+        width: 90%;
         padding: 0; } }
     .projects .project-div h2, .projects .project-div p {
       color: black; }
@@ -244,16 +241,16 @@ body {
         -moz-transition: all 0.3s ease-in-out;
         -ms-transition: all 0.3s ease-in-out;
         transition: all 0.3s ease-in-out; }
-        .projects .project-div .project-container .project:hover {
+        .projects .project-div .project-container .project:hover, .projects .project-div .project-container .project:active, .projects .project-div .project-container .project:focus {
           -webkit-transform: scale(1.05);
           -moz-transform: scale(1.05);
           -ms-transform: scale(1.05);
           transform: scale(1.05); }
-          .projects .project-div .project-container .project:hover .overlay {
+          .projects .project-div .project-container .project:hover .overlay, .projects .project-div .project-container .project:active .overlay, .projects .project-div .project-container .project:focus .overlay {
             opacity: 0.05; }
-          .projects .project-div .project-container .project:hover .button-container h3 {
+          .projects .project-div .project-container .project:hover .button-container h3, .projects .project-div .project-container .project:active .button-container h3, .projects .project-div .project-container .project:focus .button-container h3 {
             opacity: 1; }
-          .projects .project-div .project-container .project:hover .button-container .project-link {
+          .projects .project-div .project-container .project:hover .button-container .project-link, .projects .project-div .project-container .project:active .button-container .project-link, .projects .project-div .project-container .project:focus .button-container .project-link {
             opacity: 1;
             -webkit-transition: all 0.5s ease;
             -moz-transition: all 0.5s ease;
@@ -327,7 +324,7 @@ body {
               -moz-transition: width 0.3s ease-in-out;
               -ms-transition: width 0.3s ease-in-out;
               transition: width 0.3s ease-in-out; }
-            .projects .project-div .project-container .project .button-container .project-link:hover:after {
+            .projects .project-div .project-container .project .button-container .project-link:hover:after, .projects .project-div .project-container .project .button-container .project-link:focus:after, .projects .project-div .project-container .project .button-container .project-link:active:after {
               width: 100%; }
             .projects .project-div .project-container .project .button-container .project-link:hover {
               color: #f1f1f1; }
