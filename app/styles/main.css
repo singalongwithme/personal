@@ -87,6 +87,12 @@ body {
     @media screen and (max-width: 480px) {
       .banner .social-icons {
         width: 100%; } }
+    @media screen and (max-width: 480px) {
+      .banner .social-icons .banner-name {
+        font-size: 20px; } }
+    @media screen and (max-width: 480px) {
+      .banner .social-icons .title {
+        font-size: 14px; } }
     .banner .social-icons .icon {
       display: inline-block;
       vertical-align: top;

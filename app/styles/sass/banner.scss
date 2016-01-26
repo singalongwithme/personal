@@ -67,6 +67,17 @@
 
 		@include max-width-mobile();
 
+		.banner-name {
+			@media screen and (max-width: 480px) {
+				font-size: 20px;
+			}
+		}
+
+		.title {
+			@media screen and (max-width: 480px) {
+				font-size: 14px;
+			}
+		}
 		.icon {
 			display: inline-block;
 			vertical-align: top;
