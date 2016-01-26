@@ -4,6 +4,10 @@
 	width: 100%;
 	height: 600px;
 
+	@media screen and (max-width: 768px) {
+		height: 500px;
+	}
+
 	@include setCoverBackground('../assets/background.jpg');
 
 	.profile {
@@ -15,6 +19,12 @@
 		@include setCoverBackground('../assets/profile.jpg');
 		@include center(-100px);
 		@include border-radius(100px);
+
+		@media screen and (max-width: 768px) {
+			width: 150px;
+			height: 150px;
+			top: -150px;
+		}
 	}
 
 	.circle {
@@ -26,6 +36,12 @@
 
 		@include center(-100px);
 		@include border-radius(105px);
+
+		@media screen and (max-width: 768px) {
+			width: 160px;
+			height: 160px;
+			top: -150px;
+		}
 	}
 
 	.social-icons {
@@ -35,9 +51,21 @@
 		right: 0;
 		margin: auto;
 
-		width: 50%;
+		width: 60%;
 		height: 100px;
 		text-align: center;
+
+		@media screen and (max-width: 768px) {
+			width: 60px;
+			height: 60px;
+			width: 75%;
+		}
+
+		@media screen and (max-width: 480px) {
+			bottom: 175px;
+		}
+
+		@include max-width-mobile();
 
 		.icon {
 			display: inline-block;
@@ -50,6 +78,11 @@
 			text-indent: -9999px;
 
 			@include transition(background 0.3s, -webkit-filter 0.5s);
+
+			@media screen and (max-width: 768px) {
+				width: 60px;
+				height: 60px;
+			}
 		}
 
 		.github {
@@ -61,6 +94,8 @@
 				background-position: 0 -80px;
 				-webkit-filter: invert(100%);
 			}
+
+			@include social-hover-responsive(0 -60px);
 		}
 
 		.linkedin {
@@ -73,6 +108,8 @@
 				background-position: 80px 0;
 				-webkit-filter: invert(0%);
 			}
+
+			@include social-hover-responsive(60px 0);
 		}
 
 		.blog {
@@ -84,6 +121,8 @@
 				background-position: 0 80px;
 				-webkit-filter: invert(100%);
 			}
+
+			@include social-hover-responsive(0 60px);
 		}
 
 		.email {
@@ -95,6 +134,8 @@
 				background-position: -80px 0;
 				-webkit-filter: invert(100%);
 			}
+
+			@include social-hover-responsive(-60px 0);
 		}
 	}
 }

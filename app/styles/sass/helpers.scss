@@ -41,3 +41,29 @@
 	background-position: 0 0;
 	background-color: antiquewhite;
 }
+
+@mixin max-width-mobile() {
+	@media screen and (max-width: 480px) {
+		width: 100%;
+	}
+}
+
+@mixin max-width-md() {
+	@media screen and (max-width: 768px) {
+		width: 75%;
+	}
+}
+
+@mixin max-width-lg() {
+	@media screen and (max-width: 998px) {
+		width: 65%;
+	}
+}
+
+@mixin social-hover-responsive($values...) {
+	@media screen and (max-width: 768px) {
+		&:hover {
+			background-position: $values;
+		}
+	}
+}

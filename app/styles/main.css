@@ -22,6 +22,9 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; }
+  @media screen and (max-width: 768px) {
+    .banner {
+      height: 500px; } }
   .banner .profile {
     width: 200px;
     height: 200px;
@@ -40,6 +43,11 @@ body {
     -moz-border-radius: 100px;
     -ms-border-radius: 100px;
     border-radius: 100px; }
+    @media screen and (max-width: 768px) {
+      .banner .profile {
+        width: 150px;
+        height: 150px;
+        top: -150px; } }
   .banner .circle {
     width: 210px;
     height: 210px;
@@ -54,15 +62,31 @@ body {
     -moz-border-radius: 105px;
     -ms-border-radius: 105px;
     border-radius: 105px; }
+    @media screen and (max-width: 768px) {
+      .banner .circle {
+        width: 160px;
+        height: 160px;
+        top: -150px; } }
   .banner .social-icons {
     position: absolute;
     bottom: 150px;
     left: 0;
     right: 0;
     margin: auto;
-    width: 50%;
+    width: 60%;
     height: 100px;
     text-align: center; }
+    @media screen and (max-width: 768px) {
+      .banner .social-icons {
+        width: 60px;
+        height: 60px;
+        width: 75%; } }
+    @media screen and (max-width: 480px) {
+      .banner .social-icons {
+        bottom: 175px; } }
+    @media screen and (max-width: 480px) {
+      .banner .social-icons {
+        width: 100%; } }
     .banner .social-icons .icon {
       display: inline-block;
       vertical-align: top;
@@ -76,6 +100,10 @@ body {
       -moz-transition: background 0.3s, -webkit-filter 0.5s;
       -ms-transition: background 0.3s, -webkit-filter 0.5s;
       transition: background 0.3s, -webkit-filter 0.5s; }
+      @media screen and (max-width: 768px) {
+        .banner .social-icons .icon {
+          width: 60px;
+          height: 60px; } }
     .banner .social-icons .github {
       background: url("../assets/github.png");
       background-size: cover;
@@ -86,6 +114,9 @@ body {
         background-color: #a6a6a6;
         background-position: 0 -80px;
         -webkit-filter: invert(100%); }
+      @media screen and (max-width: 768px) {
+        .banner .social-icons .github:hover {
+          background-position: 0 -60px; } }
     .banner .social-icons .linkedin {
       background: url("../assets/linkedin.png");
       background-size: cover;
@@ -97,6 +128,9 @@ body {
         background-color: #4099ff;
         background-position: 80px 0;
         -webkit-filter: invert(0%); }
+      @media screen and (max-width: 768px) {
+        .banner .social-icons .linkedin:hover {
+          background-position: 60px 0; } }
     .banner .social-icons .blog {
       background: url("../assets/blog.png");
       background-size: cover;
@@ -107,6 +141,9 @@ body {
         background-color: #117fd0;
         background-position: 0 80px;
         -webkit-filter: invert(100%); }
+      @media screen and (max-width: 768px) {
+        .banner .social-icons .blog:hover {
+          background-position: 0 60px; } }
     .banner .social-icons .email {
       background: url("../assets/email.png");
       background-size: cover;
@@ -117,6 +154,9 @@ body {
         background-color: #2cb7c9;
         background-position: -80px 0;
         -webkit-filter: invert(100%); }
+      @media screen and (max-width: 768px) {
+        .banner .social-icons .email:hover {
+          background-position: -60px 0; } }
 
 .about {
   position: relative !important;
@@ -129,6 +169,15 @@ body {
   left: 0;
   margin: auto;
   text-align: justify; }
+  @media screen and (max-width: 998px) {
+    .about {
+      width: 65%; } }
+  @media screen and (max-width: 768px) {
+    .about {
+      width: 75%; } }
+  @media screen and (max-width: 480px) {
+    .about {
+      width: 100%; } }
   .about h2, .about p {
     color: black; }
   .about h2 {
@@ -158,6 +207,15 @@ body {
     bottom: 0;
     left: 0;
     margin: auto; }
+    @media screen and (max-width: 998px) {
+      .projects .project-div {
+        width: 65%; } }
+    @media screen and (max-width: 768px) {
+      .projects .project-div {
+        width: 75%; } }
+    @media screen and (max-width: 480px) {
+      .projects .project-div {
+        width: 100%; } }
     .projects .project-div h2, .projects .project-div p {
       color: black; }
     .projects .project-div h2 {
@@ -172,6 +230,7 @@ body {
         overflow: hidden;
         background-color: #f1f1f1;
         opacity: 1;
+        max-width: 800px;
         -webkit-transition: all 0.3s ease-in-out;
         -moz-transition: all 0.3s ease-in-out;
         -ms-transition: all 0.3s ease-in-out;
@@ -208,6 +267,12 @@ body {
           .projects .project-div .project-container .project .button-container h3 {
             opacity: 0.05;
             text-align: center; }
+            @media screen and (max-width: 768px) {
+              .projects .project-div .project-container .project .button-container h3 {
+                font-size: 22px; } }
+            @media screen and (max-width: 480px) {
+              .projects .project-div .project-container .project .button-container h3 {
+                font-size: 18px; } }
           .projects .project-div .project-container .project .button-container .project-link {
             font-family: Arial;
             line-height: 20px;
@@ -219,7 +284,6 @@ body {
             padding: 5px 20px;
             border: 4px solid #669999;
             text-align: center;
-            line-height: 40px;
             color: #669999;
             font-weight: 900;
             opacity: 0.05;
@@ -234,6 +298,13 @@ body {
             -moz-transition: all 0.3s ease-in-out;
             -ms-transition: all 0.3s ease-in-out;
             transition: all 0.3s ease-in-out; }
+            @media screen and (max-width: 480px) {
+              .projects .project-div .project-container .project .button-container .project-link {
+                width: 100px;
+                height: 30px;
+                font-size: 15px;
+                line-height: 15px;
+                padding: 5px; } }
             .projects .project-div .project-container .project .button-container .project-link:after {
               position: absolute;
               content: "";
