@@ -1,8 +1,8 @@
 var gulp   = require('gulp'),
-	inject = require('gulp-inject'),
-	bower  = require('main-bower-files'),
-	sass   = require('gulp-ruby-sass'),
-	series = require('stream-series');
+		inject = require('gulp-inject'),
+		bower  = require('main-bower-files'),
+		sass   = require('gulp-ruby-sass'),
+		series = require('stream-series');
 
 gulp.task('inject', function () {
 
