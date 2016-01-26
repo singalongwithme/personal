@@ -86,7 +86,7 @@ body {
         bottom: 175px; } }
     @media screen and (max-width: 480px) {
       .banner .social-icons {
-        width: 90%; } }
+        width: 100%; } }
     @media screen and (max-width: 480px) {
       .banner .social-icons .banner-name {
         font-size: 20px; } }
