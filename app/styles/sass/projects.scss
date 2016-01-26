@@ -12,7 +12,7 @@
 		@include center(0);
 		@include max-width-lg();
 		@include max-width-md();
-		// @include max-width-mobile();
+		@include max-width-mobile();
 
 		h2, p {
 			color : black;

@@ -86,7 +86,8 @@ body {
         bottom: 175px; } }
     @media screen and (max-width: 480px) {
       .banner .social-icons {
-        width: 100%; } }
+        width: 95%;
+        padding: 0; } }
     @media screen and (max-width: 480px) {
       .banner .social-icons .banner-name {
         font-size: 20px; } }
@@ -181,6 +182,10 @@ body {
   @media screen and (max-width: 768px) {
     .about {
       width: 75%; } }
+  @media screen and (max-width: 480px) {
+    .about {
+      width: 95%;
+      padding: 0; } }
   .about h2, .about p {
     color: black; }
   .about h2 {
@@ -216,6 +221,10 @@ body {
     @media screen and (max-width: 768px) {
       .projects .project-div {
         width: 75%; } }
+    @media screen and (max-width: 480px) {
+      .projects .project-div {
+        width: 95%;
+        padding: 0; } }
     .projects .project-div h2, .projects .project-div p {
       color: black; }
     .projects .project-div h2 {
