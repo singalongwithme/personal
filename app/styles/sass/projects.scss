@@ -12,7 +12,7 @@
 		@include center(0);
 		@include max-width-lg();
 		@include max-width-md();
-		@include max-width-mobile();
+		// @include max-width-mobile();
 
 		h2, p {
 			color : black;
@@ -85,7 +85,7 @@
 						}
 						.project-link {
 							font-family: Arial;
-							line-height: 20px;
+							line-height: 40px;
 							font-weight: 900;
 							font-size: 20px;
 							width: 140px;
@@ -94,7 +94,6 @@
 							padding: 5px 20px;
 							border: 4px solid #669999;
 							text-align: center;
-							// line-height: 40px;
 							color: #669999;
 							font-weight: 900;
 							opacity: 0.05;
@@ -107,7 +106,7 @@
 								width: 100px;
 								height: 30px;
 								font-size: 15px;
-								line-height: 15px;
+								line-height: 30px;
 								padding: 5px;
 							}
 

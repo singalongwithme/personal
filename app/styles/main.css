@@ -86,7 +86,7 @@ body {
         bottom: 175px; } }
     @media screen and (max-width: 480px) {
       .banner .social-icons {
-        width: 100%; } }
+        width: 90%; } }
     @media screen and (max-width: 480px) {
       .banner .social-icons .banner-name {
         font-size: 20px; } }
@@ -181,9 +181,6 @@ body {
   @media screen and (max-width: 768px) {
     .about {
       width: 75%; } }
-  @media screen and (max-width: 480px) {
-    .about {
-      width: 100%; } }
   .about h2, .about p {
     color: black; }
   .about h2 {
@@ -219,9 +216,6 @@ body {
     @media screen and (max-width: 768px) {
       .projects .project-div {
         width: 75%; } }
-    @media screen and (max-width: 480px) {
-      .projects .project-div {
-        width: 100%; } }
     .projects .project-div h2, .projects .project-div p {
       color: black; }
     .projects .project-div h2 {
@@ -281,7 +275,7 @@ body {
                 font-size: 18px; } }
           .projects .project-div .project-container .project .button-container .project-link {
             font-family: Arial;
-            line-height: 20px;
+            line-height: 40px;
             font-weight: 900;
             font-size: 20px;
             width: 140px;
@@ -309,7 +303,7 @@ body {
                 width: 100px;
                 height: 30px;
                 font-size: 15px;
-                line-height: 15px;
+                line-height: 30px;
                 padding: 5px; } }
             .projects .project-div .project-container .project .button-container .project-link:after {
               position: absolute;
