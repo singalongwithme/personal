@@ -231,6 +231,12 @@ body {
       text-align: left; }
     .projects .project-div .project-container {
       overflow: hidden; }
+      .projects .project-div .project-container .mobile-title {
+        display: none;
+        text-align: center; }
+      @media screen and (max-width: 480px) {
+        .projects .project-div .project-container .mobile-title {
+          display: inline; } }
       .projects .project-div .project-container .project {
         position: relative;
         overflow: hidden;
@@ -241,21 +247,24 @@ body {
         -moz-transition: all 0.3s ease-in-out;
         -ms-transition: all 0.3s ease-in-out;
         transition: all 0.3s ease-in-out; }
-        .projects .project-div .project-container .project:hover, .projects .project-div .project-container .project:active, .projects .project-div .project-container .project:focus {
+        .projects .project-div .project-container .project:hover {
           -webkit-transform: scale(1.05);
           -moz-transform: scale(1.05);
           -ms-transform: scale(1.05);
           transform: scale(1.05); }
-          .projects .project-div .project-container .project:hover .overlay, .projects .project-div .project-container .project:active .overlay, .projects .project-div .project-container .project:focus .overlay {
+          .projects .project-div .project-container .project:hover .overlay {
             opacity: 0.05; }
-          .projects .project-div .project-container .project:hover .button-container h3, .projects .project-div .project-container .project:active .button-container h3, .projects .project-div .project-container .project:focus .button-container h3 {
+          .projects .project-div .project-container .project:hover .button-container h3 {
             opacity: 1; }
-          .projects .project-div .project-container .project:hover .button-container .project-link, .projects .project-div .project-container .project:active .button-container .project-link, .projects .project-div .project-container .project:focus .button-container .project-link {
+          .projects .project-div .project-container .project:hover .button-container .project-link {
             opacity: 1;
             -webkit-transition: all 0.5s ease;
             -moz-transition: all 0.5s ease;
             -ms-transition: all 0.5s ease;
             transition: all 0.5s ease; }
+        @media screen and (max-width: 480px) {
+          .projects .project-div .project-container .project {
+            pointer-events: none; } }
         .projects .project-div .project-container .project .overlay {
           opacity: 1; }
           .projects .project-div .project-container .project .overlay .project-banner {

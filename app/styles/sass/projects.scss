@@ -29,6 +29,17 @@
 
 		.project-container {
 			overflow: hidden;
+
+			.mobile-title {
+				display: none;
+				text-align: center;
+			}
+
+			@media screen and (max-width: 480px) {
+				.mobile-title {
+					display: inline;
+				}
+			}
 			.project {
 				position: relative;
 				overflow: hidden;
@@ -38,7 +49,7 @@
 
 				@include transition(all 0.3s ease-in-out);
 
-				&:hover, &:active, &:focus {
+				&:hover {
 					@include transform(scale(1.05));
 
 					.overlay {
@@ -54,6 +65,10 @@
 							@include transition(all 0.5s ease);
 						}
 					}
+				}
+
+				@media screen and (max-width: 480px) {
+					pointer-events: none;
 				}
 
 				.overlay {
