@@ -232,8 +232,7 @@ body {
     .projects .project-div .project-container {
       overflow: hidden; }
       .projects .project-div .project-container .mobile-title {
-        display: none;
-        text-align: center; }
+        display: none; }
       @media screen and (max-width: 480px) {
         .projects .project-div .project-container .mobile-title {
           display: inline; } }
