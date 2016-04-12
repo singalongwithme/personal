@@ -1,3 +1,5 @@
+$link-color: #7F8F94;
+
 .projects {
 	position: relative !important;
 	background-color: #f1f1f1;
@@ -107,11 +109,11 @@
 							height: 40px;
 							text-decoration: none;
 							padding: 5px 20px;
-							border: 4px solid #669999;
+							border: 4px solid $link-color;
 							text-align: center;
-							color: #669999;
+							color: $link-color;
 							font-weight: 900;
-							opacity: 0.05;
+							opacity: 0;
 							letter-spacing: 0.75px;
 
 							@include center(0);
@@ -133,8 +135,8 @@
 								width: 0%;
 								height: 100%;
 								z-index: -1;
-								background-color: #669999;
-								@include transition(width 0.3s ease-in-out);
+								background-color: $link-color;
+								@include transition(width 0.3s ease);
 							}
 
 							&:hover:after, &:focus:after, &:active:after {

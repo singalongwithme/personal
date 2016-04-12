@@ -297,11 +297,11 @@ body {
             height: 40px;
             text-decoration: none;
             padding: 5px 20px;
-            border: 4px solid #669999;
+            border: 4px solid #7F8F94;
             text-align: center;
-            color: #669999;
+            color: #7F8F94;
             font-weight: 900;
-            opacity: 0.05;
+            opacity: 0;
             letter-spacing: 0.75px;
             position: absolute;
             top: 0;
@@ -328,11 +328,11 @@ body {
               width: 0%;
               height: 100%;
               z-index: -1;
-              background-color: #669999;
-              -webkit-transition: width 0.3s ease-in-out;
-              -moz-transition: width 0.3s ease-in-out;
-              -ms-transition: width 0.3s ease-in-out;
-              transition: width 0.3s ease-in-out; }
+              background-color: #7F8F94;
+              -webkit-transition: width 0.3s ease;
+              -moz-transition: width 0.3s ease;
+              -ms-transition: width 0.3s ease;
+              transition: width 0.3s ease; }
             .projects .project-div .project-container .project .button-container .project-link:hover:after, .projects .project-div .project-container .project .button-container .project-link:focus:after, .projects .project-div .project-container .project .button-container .project-link:active:after {
               width: 100%; }
             .projects .project-div .project-container .project .button-container .project-link:hover {
