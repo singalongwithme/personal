@@ -8,7 +8,7 @@
 	function ProjectsController () {
 		var vm = this;
 
-		vm.projectsTag = 'Here are some projects I\'ve worked on: ';
+		vm.projectsTag = 'Here are some projects I helped build: ';
 
 		vm.projects = [
 			{
