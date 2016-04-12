@@ -23,11 +23,15 @@
 		return directive;
 
 		function link (scope, elm, attrs) {
+			function onClick () {
+				window.open(attrs.url);
+			}
+
+			elm.on('click', onClick);
 		};
 
 		function ProjectItemController () {
 			var vm = this;
-			console.log(vm.url);
 		};
 	};
 

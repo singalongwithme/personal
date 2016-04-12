@@ -229,8 +229,41 @@ body {
       text-decoration: underline; }
     .projects .project-div p {
       text-align: left; }
+    .projects .project-div .container {
+      position: relative;
+      height: 420px; }
+      .projects .project-div .container .project-container:nth-child(1) {
+        top: 0;
+        left: 0; }
+      .projects .project-div .container .project-container:nth-child(2) {
+        top: 0;
+        left: 25%; }
+        .projects .project-div .container .project-container:nth-child(2):hover {
+          left: 0; }
+      .projects .project-div .container .project-container:nth-child(3) {
+        top: 0;
+        left: 50%; }
+        .projects .project-div .container .project-container:nth-child(3):hover {
+          left: 0; }
+      .projects .project-div .container .project-container:nth-child(4) {
+        top: 0;
+        left: 75%; }
+        .projects .project-div .container .project-container:nth-child(4):hover {
+          left: 10%; }
     .projects .project-div .project-container {
-      overflow: hidden; }
+      position: absolute;
+      width: 25%;
+      z-index: 1;
+      display: inline-block;
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+      .projects .project-div .project-container:hover {
+        position: absolute;
+        width: 90%;
+        z-index: 400;
+        cursor: pointer; }
       .projects .project-div .project-container .mobile-title {
         display: none; }
       @media screen and (max-width: 480px) {
@@ -247,31 +280,15 @@ body {
         -moz-transition: all 0.3s ease-in-out;
         -ms-transition: all 0.3s ease-in-out;
         transition: all 0.3s ease-in-out; }
-        .projects .project-div .project-container .project:hover {
-          -webkit-transform: scale(1.05);
-          -moz-transform: scale(1.05);
-          -ms-transform: scale(1.05);
-          transform: scale(1.05); }
-          .projects .project-div .project-container .project:hover .overlay {
-            opacity: 0.05; }
-          .projects .project-div .project-container .project:hover .button-container h3 {
-            opacity: 1; }
-          .projects .project-div .project-container .project:hover .button-container .project-link {
-            opacity: 1;
-            -webkit-transition: all 0.5s ease;
-            -moz-transition: all 0.5s ease;
-            -ms-transition: all 0.5s ease;
-            transition: all 0.5s ease; }
         @media screen and (max-width: 480px) {
           .projects .project-div .project-container .project {
             pointer-events: none; } }
         .projects .project-div .project-container .project .overlay {
+          height: 400px;
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
           opacity: 1; }
-          .projects .project-div .project-container .project .overlay .project-banner {
-            position: relative;
-            width: 100%;
-            height: auto;
-            box-sizing: border-box; }
         .projects .project-div .project-container .project .button-container {
           position: absolute;
           top: 0;

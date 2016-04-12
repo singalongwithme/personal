@@ -29,8 +29,57 @@ $link-color: #7F8F94;
 			text-align: left;
 		}
 
+		.container {
+			position: relative;
+
+			height: 420px;
+
+			.project-container:nth-child(1) {
+				top: 0;
+				left: 0;
+			}
+
+			.project-container:nth-child(2) {
+				top: 0;
+				left: 25%;
+
+				&:hover {
+					left: 0;
+				}
+			}
+
+			.project-container:nth-child(3) {
+				top: 0;
+				left: 50%;
+
+				&:hover {
+					left: 0;
+				}
+			}
+
+			.project-container:nth-child(4) {
+				top: 0;
+				left: 75%;
+
+				&:hover {
+					left: 10%;
+				}
+			}
+		}
+
 		.project-container {
-			overflow: hidden;
+			position: absolute;
+			width: 25%;
+			z-index: 1;
+			display: inline-block;
+			@include transition(all 0.3s ease);
+
+			&:hover {
+				position: absolute;
+				width: 90%;
+				z-index: 400;
+				cursor: pointer;
+			}
 
 			.mobile-title {
 				display: none;
@@ -51,35 +100,41 @@ $link-color: #7F8F94;
 
 				@include transition(all 0.3s ease-in-out);
 
-				&:hover {
-					@include transform(scale(1.05));
+				// &:hover {
+				// 	@include transform(scale(1.05));
 
-					.overlay {
-						opacity: 0.05;
-					}
+				// 	.overlay {
+				// 		opacity: 0.05;
+				// 	}
 
-					.button-container {
-						h3 {
-							opacity: 1;
-						}
-						.project-link {
-							opacity: 1;
-							@include transition(all 0.5s ease);
-						}
-					}
-				}
+				// 	.button-container {
+				// 		h3 {
+				// 			opacity: 1;
+				// 		}
+				// 		.project-link {
+				// 			opacity: 1;
+				// 			@include transition(all 0.5s ease);
+				// 		}
+				// 	}
+				// }
 
 				@media screen and (max-width: 480px) {
 					pointer-events: none;
 				}
 
 				.overlay {
-					.project-banner {
-						position: relative;
-						width: 100%;
-						height: auto;
-						box-sizing: border-box;
-					}
+					height: 400px;
+					background-size: cover;
+					background-position: center;
+					background-repeat: no-repeat;
+					// .project-banner {
+					// 	background-size: cover;
+					// 	position: relative;
+					// 	width: 25%;
+					// 	height: 400px;
+					// 	height: auto;
+					// 	box-sizing: border-box;
+					// }
 
 					opacity: 1;
 				}
