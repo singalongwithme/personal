@@ -5,7 +5,8 @@ var 	gulp    = require('gulp'),
 		series  = require('stream-series'),
 		concat  = require('gulp-concat'),
 		uglify  = require('gulp-uglify'),
-		uglycss = require('gulp-uglifycss');
+		uglycss = require('gulp-uglifycss'),
+		htmlmin = require('gulp-htmlmin');
 
 gulp.task('inject', function () {
 
@@ -34,6 +35,10 @@ gulp.task('build', function () {
 	gulp.src(['app/styles/main.css', 'bower_components/**/*.css'])
 		.pipe(concat('main.css'))
 		.pipe(uglycss())
+		.pipe(gulp.dest('dist'));;
+
+	gulp.src(['app/views/**/*.html'])
+		.pipe(htmlmin({collapseWhitespace: true}))
 		.pipe(gulp.dest('dist'));
 });
 

@@ -239,17 +239,20 @@ body {
         top: 0;
         left: 25%; }
         .projects .project-div .container .project-container:nth-child(2):hover {
-          left: 0; }
+          left: 0;
+          opacity: 1; }
       .projects .project-div .container .project-container:nth-child(3) {
         top: 0;
         left: 50%; }
         .projects .project-div .container .project-container:nth-child(3):hover {
-          left: 0; }
+          left: 0;
+          opacity: 1; }
       .projects .project-div .container .project-container:nth-child(4) {
         top: 0;
         left: 75%; }
         .projects .project-div .container .project-container:nth-child(4):hover {
-          left: 10%; }
+          left: 10%;
+          opacity: 1; }
     .projects .project-div .project-container {
       position: absolute;
       width: 25%;
@@ -274,83 +277,16 @@ body {
         position: relative;
         overflow: hidden;
         background-color: #f1f1f1;
-        opacity: 1;
+        opacity: 0.8;
         max-width: 800px;
         -webkit-transition: all 0.3s ease-in-out;
         -moz-transition: all 0.3s ease-in-out;
         -ms-transition: all 0.3s ease-in-out;
         transition: all 0.3s ease-in-out; }
-        @media screen and (max-width: 480px) {
-          .projects .project-div .project-container .project {
-            pointer-events: none; } }
+        .projects .project-div .project-container .project:hover {
+          opacity: 1; }
         .projects .project-div .project-container .project .overlay {
           height: 400px;
           background-size: cover;
           background-position: center;
-          background-repeat: no-repeat;
-          opacity: 1; }
-        .projects .project-div .project-container .project .button-container {
-          position: absolute;
-          top: 0;
-          right: 0;
-          bottom: 0;
-          left: 0;
-          margin: auto; }
-          .projects .project-div .project-container .project .button-container h3 {
-            opacity: 0.05;
-            text-align: center; }
-            @media screen and (max-width: 768px) {
-              .projects .project-div .project-container .project .button-container h3 {
-                font-size: 22px; } }
-            @media screen and (max-width: 480px) {
-              .projects .project-div .project-container .project .button-container h3 {
-                font-size: 18px; } }
-          .projects .project-div .project-container .project .button-container .project-link {
-            font-family: Arial;
-            line-height: 40px;
-            font-weight: 900;
-            font-size: 20px;
-            width: 140px;
-            height: 40px;
-            text-decoration: none;
-            padding: 5px 20px;
-            border: 4px solid #7F8F94;
-            text-align: center;
-            color: #7F8F94;
-            font-weight: 900;
-            opacity: 0;
-            letter-spacing: 0.75px;
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            margin: auto;
-            -webkit-transition: all 0.3s ease-in-out;
-            -moz-transition: all 0.3s ease-in-out;
-            -ms-transition: all 0.3s ease-in-out;
-            transition: all 0.3s ease-in-out; }
-            @media screen and (max-width: 480px) {
-              .projects .project-div .project-container .project .button-container .project-link {
-                width: 100px;
-                height: 30px;
-                font-size: 15px;
-                line-height: 30px;
-                padding: 5px; } }
-            .projects .project-div .project-container .project .button-container .project-link:after {
-              position: absolute;
-              content: "";
-              top: 0;
-              left: 0;
-              width: 0%;
-              height: 100%;
-              z-index: -1;
-              background-color: #7F8F94;
-              -webkit-transition: width 0.3s ease;
-              -moz-transition: width 0.3s ease;
-              -ms-transition: width 0.3s ease;
-              transition: width 0.3s ease; }
-            .projects .project-div .project-container .project .button-container .project-link:hover:after, .projects .project-div .project-container .project .button-container .project-link:focus:after, .projects .project-div .project-container .project .button-container .project-link:active:after {
-              width: 100%; }
-            .projects .project-div .project-container .project .button-container .project-link:hover {
-              color: #f1f1f1; }
+          background-repeat: no-repeat; }
